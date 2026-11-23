@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ridwan Rattan Exports | Cirebon Handcrafted Furniture & Global B2B Sourcing</title>
+  <meta name="description" content="Direct factory exporter of handcrafted Indonesian rattan furniture and home décor from Cirebon. Real-time stock status, international shipping transit calculator, and wholesale B2B pricing." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container announcement-inner">
+      <div class="announcement-highlights">
+        <span class="announcement-item">📍 <strong>Factory Origin:</strong> Cirebon, West Java, Indonesia</span>
+        <span class="announcement-item">🚢 <strong>Port of Loading:</strong> Tanjung Priok (Jakarta)</span>
+        <span class="announcement-item">🌿 <strong>SVLK & V-Legal Certified</strong> Sustainable Rattan</span>
+      </div>
+      <div class="announcement-actions">
+        <span>Direct Factory Desk: <strong>+62 812-3456-7890</strong></span>
+        <select id="currencySelect" class="currency-selector" title="Choose display currency">
+          <option value="USD">USD ($)</option>
+          <option value="EUR">EUR (€)</option>
+          <option value="AUD">AUD (A$)</option>
+          <option value="GBP">GBP (£)</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">🪑</div>
+        <div class="brand-text">
+          <h1>RIDWAN RATTAN</h1>
+          <span>EXPORTS • CIREBON INDONESIA</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="catalog.html" class="nav-link">Export Catalog</a></li>
+          <li><a href="shipping-guide.html" class="nav-link">Shipping & Lead Times</a></li>
+          <li><a href="about.html" class="nav-link">About Mr. Ridwan</a></li>
+          <li><a href="faq.html" class="nav-link">B2B FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-rfq-toggle js-open-rfq" title="Open Quotation Cart">
+          <span>📋 RFQ Quote</span>
+          <span class="badge-count badge-rfq-count">0</span>
+        </button>
+        <a href="#shipping-calculator" class="btn btn-primary btn-sm">Transit Estimator</a>
+        <button class="mobile-toggle" aria-label="Toggle Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="badge badge-pill">🌿 Certified Indonesian Rattan Manufacturer</span>
+        <h1>Authentic Cirebon Rattan Furniture, Crafted for <span class="hero-highlight">Global Living</span>.</h1>
+        <p class="hero-desc">
+          Direct from the world capital of rattan craftsmanship in Cirebon, Indonesia. Mr. Ridwan supplies hospitality developers, interior designers, and retail furniture chains across 28+ countries with transparent pricing, live stock availability, and turnkey export logistics.
+        </p>
+
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="catalog.html" class="btn btn-primary">
+            Explore Export Catalog & Stock
+          </a>
+          <a href="#shipping-calculator" class="btn btn-outline">
+            Calculate Shipping & Delivery Time
+          </a>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <div class="metric-number">28+</div>
+            <div class="metric-label">Export Destination Countries</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-number">3-5 Days</div>
+            <div class="metric-label">Ready-Stock Dispatch to Port</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-number">100%</div>
+            <div class="metric-label">SVLK / V-Legal Verified Timber & Cane</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-main-img-card">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80" alt="Cirebon Handcrafted Rattan Furniture by Mr. Ridwan" />
+          
+          <div class="floating-status-pill">
+            <span class="status-indicator"></span>
+            <span>Warehouse Stock: <strong>500+ Units Ready for Loading</strong></span>
+          </div>
+
+          <div class="floating-quote-pill">
+            <div>
+              <div style="font-size: 11px; text-transform: uppercase; color: #a49e95;">Port of Departure</div>
+              <div style="font-weight: 700;">Tanjung Priok, Jakarta (FOB)</div>
+            </div>
+            <div style="border-left: 1px solid rgba(255,255,255,0.2); padding-left: 14px;">
+              <div style="font-size: 11px; text-transform: uppercase; color: #a49e95;">Production Lead Time</div>
+              <div style="font-weight: 700; color: #f59e0b;">Custom Orders: 3-4 Weeks</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem-Solver Value Cards -->
+  <section class="section" style="padding-top: 20px;">
+    <div class="container">
+      <div class="painpoints-grid">
+        <div class="painpoint-card">
+          <div class="painpoint-icon">📦</div>
+          <h3>1. "Are Products Ready?"</h3>
+          <p>
+            Real-time stock indicators on every item. Ready-stock inventory ships to port in <strong>3–5 business days</strong>. Custom made-to-order projects completed in <strong>3–4 weeks</strong>.
+          </p>
+        </div>
+
+        <div class="painpoint-card">
+          <div class="painpoint-icon">🎨</div>
+          <h3>2. "What Variants Exist?"</h3>
+          <p>
+            Choose from <strong>15+ weave techniques</strong> (Cannage, Lattice, Peacock, Kubu) and <strong>8 natural eco-friendly finishes</strong> tailored to your market's aesthetic.
+          </p>
+        </div>
+
+        <div class="painpoint-card">
+          <div class="painpoint-icon">🏷️</div>
+          <h3>3. "What is the Total Cost?"</h3>
+          <p>
+            Transparent B2B wholesale pricing in USD, EUR, AUD, or GBP with tiered discounts for 20ft and 40ft High Cube containers. No hidden export fees.
+          </p>
+        </div>
+
+        <div class="painpoint-card">
+          <div class="painpoint-icon">🚢</div>
+          <h3>4. "How Long & How Much is Freight?"</h3>
+          <p>
+            Use our live ocean freight calculator to check exact transit times (e.g. 14 days to Australia, 24 days to USA) and estimated shipping rates to your nearest port.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Shipping & Transit Calculator Section -->
+  <section id="shipping-calculator" class="section section-cream">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-pill">Instant Logistics Estimator</span>
+        <h2 class="section-title">Calculate Freight Cost & Transit Time</h2>
+        <p class="section-subtitle">
+          Find out estimated shipping duration from our Cirebon facility / Tanjung Priok Port directly to your destination seaport worldwide.
+        </p>
+      </div>
+
+      <div class="calc-card">
+        <div class="calc-inputs">
+          <div class="form-group">
+            <label class="form-label">
+              <span>Select Destination Port / Region</span>
+              <span style="font-weight: normal; color: var(--text-muted); font-size: 12px;">Worldwide Coverage</span>
+            </label>
+            <select id="shippingDestSelect" class="form-select">
+              <option value="us-la" selected>🇺🇸 Los Angeles / Long Beach, CA (USA West Coast)</option>
+              <option value="us-ny">🇺🇸 New York / New Jersey (USA East Coast)</option>
+              <option value="eu-rot">🇳🇱 Port of Rotterdam / Antwerp (Western Europe)</option>
+              <option value="eu-ham">🇩🇪 Hamburg / Bremerhaven (Germany / CEE)</option>
+              <option value="au-syd">🇦🇺 Sydney / Melbourne (Australia)</option>
+              <option value="au-per">🇦🇺 Fremantle / Perth (Western Australia)</option>
+              <option value="asia-sg">🇸🇬 Port of Singapore (Southeast Asia)</option>
+              <option value="asia-tok">🇯🇵 Tokyo / Yokohama (Japan)</option>
+              <option value="me-dub">🇦🇪 Port of Jebel Ali, Dubai (Middle East)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">
+              <span>Shipment Volume / Container Type</span>
+              <span style="font-weight: normal; color: var(--text-muted); font-size: 12px;">Nesting furniture packing</span>
+            </label>
+            <select id="containerSizeSelect" class="form-select">
+              <option value="40ft" selected>40ft High Cube Container (FCL ~68 CBM - Best Economy)</option>
+              <option value="20ft">20ft Standard Container (FCL ~28 CBM)</option>
+              <option value="lcl">LCL Shared Container (Partial Load / Sample Batch)</option>
+            </select>
+          </div>
+
+          <div style="background: var(--surface); padding: 18px; border-radius: var(--radius-sm); border: 1px solid var(--border-light); font-size: 13px;">
+            <div style="font-weight: 600; color: var(--secondary); margin-bottom: 6px;">🏭 Dispatch Route from Cirebon Workshop:</div>
+            <p style="color: var(--text-muted); line-height: 1.5;">
+              Products are packaged at our Cirebon workshop, cleared through Cirebon Customs, and transported directly via Cipali Express Highway (3.5 hours) to Tanjung Priok Container Terminal in Jakarta for ocean loading.
+            </p>
+          </div>
+
+          <div style="display: flex; gap: 10px;">
+            <button class="btn btn-primary" onclick="updateShippingEstimator()">
+              Refresh Calculation
+            </button>
+            <a href="shipping-guide.html" class="btn btn-outline">
+              Full Shipping Specs & Incoterms
+            </a>
+          </div>
+        </div>
+
+        <div class="calc-result-box">
+          <div>
+            <div class="calc-result-header">
+              <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--primary);">Live Route Breakdown</div>
+              <h3 id="calcDestPort">Port of Los Angeles / Long Beach, CA (USA)</h3>
+            </div>
+
+            <div class="calc-metrics-grid">
+              <div class="calc-metric-item">
+                <div class="label">Estimated Ocean Transit</div>
+                <div class="val" id="calcTransitDays" style="color: #6ee7b7;">22 - 26 Days</div>
+              </div>
+              <div class="calc-metric-item">
+                <div class="label">Estimated Ocean Freight</div>
+                <div class="val" id="calcEstFreight" style="font-size: 18px; color: #fde047;">$2,850 - $3,450</div>
+              </div>
+              <div class="calc-metric-item">
+                <div class="label">Recommended Incoterm</div>
+                <div class="val" id="calcIncoterm" style="font-size: 16px;">FOB Tanjung Priok / CIF</div>
+              </div>
+              <div class="calc-metric-item">
+                <div class="label">Departure Port</div>
+                <div class="val" id="calcDeparturePort" style="font-size: 14px;">Tanjung Priok, Jakarta</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="calc-notice">
+              <strong>Export Compliance Included:</strong> <span id="calcCustomsNote">Lacey Act declaration & ISF 10+2 filed prior to departure. Official Phytosanitary & Methyl Bromide fumigation seals provided.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shipping Timeline Steps -->
+      <div class="shipping-timeline">
+        <div class="timeline-step">
+          <div class="step-number">1</div>
+          <h4>Order & Production</h4>
+          <p>Ready stock staged in 3 days; custom weaving completed in 3–4 weeks with photographic progress updates.</p>
+        </div>
+        <div class="timeline-step">
+          <div class="step-number">2</div>
+          <h4>Fumigation & Packaging</h4>
+          <p>Anti-fungal oven drying, moisture barrier wrapping, corner protectors, and certified fumigation treatment.</p>
+        </div>
+        <div class="timeline-step">
+          <div class="step-number">3</div>
+          <h4>Port Clearance</h4>
+          <p>Export permits, V-Legal/SVLK certificates, and bill of lading registered at Tanjung Priok Port (Jakarta).</p>
+        </div>
+        <div class="timeline-step">
+          <div class="step-number">4</div>
+          <h4>Ocean Freight & Arrival</h4>
+          <p>Direct tracking container delivery to your seaport with all original clearing documents dispatched via DHL.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Product Catalog Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-pill">Curated Export Collection</span>
+        <h2 class="section-title">Explore Ready Stock & Custom Pieces</h2>
+        <p class="section-subtitle">
+          Browse popular hospitality and retail furniture designs. Check stock status, view material variants, and click "+ Quote" to build your custom RFQ inquiry list.
+        </p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="filter-tabs" id="catalogFilterTabs">
+        <button class="filter-btn active" onclick="setCategoryFilter('all', this)">All Collections</button>
+        <button class="filter-btn" onclick="setCategoryFilter('living', this)">Living Room</button>
+        <button class="filter-btn" onclick="setCategoryFilter('dining', this)">Dining & Bar</button>
+        <button class="filter-btn" onclick="setCategoryFilter('bedroom', this)">Bedroom</button>
+        <button class="filter-btn" onclick="setCategoryFilter('decor', this)">Lighting & Décor</button>
+        <button class="filter-btn" style="border-color: #22c55e; color: #15803d;" onclick="setStockFilter('ready', this)">⚡ Ready Stock Only</button>
+      </div>
+
+      <!-- Product Grid Container -->
+      <div class="product-grid" id="productGridContainer">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <div style="text-align: center; margin-top: 48px;">
+        <a href="catalog.html" class="btn btn-secondary">
+          View Full 2026 Export Catalog (50+ Models) →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packaging & Container Optimization Assurance -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-pill">Export Quality Guarantee</span>
+        <h2 class="section-title">Engineered for Safe Ocean Transit</h2>
+        <p class="section-subtitle">
+          Rattan requires specialized moisture control and nesting packaging to withstand trans-oceanic climate shifts and reduce cubic meter shipping costs.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+        <div style="background: #fff; padding: 28px; border-radius: var(--radius-md); border: 1px solid var(--border-light);">
+          <div style="font-size: 32px; margin-bottom: 12px;">🛡️</div>
+          <h3 style="font-size: 18px; margin-bottom: 8px;">Kiln-Dried & Fumigated</h3>
+          <p style="font-size: 13.5px; color: var(--text-muted);">
+            All raw cane undergoes computerized moisture monitoring (controlled below 12% MC) followed by certified Methyl Bromide treatment to comply with strict biosecurity in the USA, EU, and Australia.
+          </p>
+        </div>
+
+        <div style="background: #fff; padding: 28px; border-radius: var(--radius-md); border: 1px solid var(--border-light);">
+          <div style="font-size: 32px; margin-bottom: 12px;">📦</div>
+          <h3 style="font-size: 18px; margin-bottom: 8px;">Nesting & Space Optimization</h3>
+          <p style="font-size: 13.5px; color: var(--text-muted);">
+            Chairs and tables are engineered with nesting stackability. A 40ft High Cube container can hold up to 340+ armchairs or 850+ lamps, significantly cutting your per-unit freight cost.
+          </p>
+        </div>
+
+        <div style="background: #fff; padding: 28px; border-radius: var(--radius-md); border: 1px solid var(--border-light);">
+          <div style="font-size: 32px; margin-bottom: 12px;">💧</div>
+          <h3 style="font-size: 18px; margin-bottom: 8px;">Triple-Layer Moisture Barrier</h3>
+          <p style="font-size: 13.5px; color: var(--text-muted);">
+            High-grade bubble foam, corner edge cardboard shields, heavy-duty 5-ply export cartons, and 12 industrial desiccant bags suspended inside each ocean container prevent condensation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Mr. Ridwan & Cirebon Heritage -->
+  <section class="section">
+    <div class="container about-grid">
+      <div class="about-image-collage">
+        <img class="about-img-main" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1000&q=80" alt="Mr. Ridwan Inspecting Handcrafted Rattan in Cirebon" />
+        <div class="about-badge-card">
+          <h4>Pak Ridwan</h4>
+          <p>Founder & Master Craftsman, 22+ Years Pioneering Cirebon Rattan Exports</p>
+        </div>
+      </div>
+
+      <div>
+        <span class="badge badge-pill">Meet the Maker</span>
+        <h2 class="section-title">Master Craftsman Ridwan & The Cirebon Artisan Guild</h2>
+        <p style="font-size: 15.5px; color: var(--text-muted); margin-bottom: 20px; line-height: 1.7;">
+          Born and raised in Cirebon—the historic epicenter that produces nearly 80% of Indonesia's finished rattan exports—Bapak Ridwan began his journey working alongside his father as a young master weaver.
+        </p>
+        <p style="font-size: 15.5px; color: var(--text-muted); margin-bottom: 24px; line-height: 1.7;">
+          Over two decades, Pak Ridwan built an export manufacturing facility uniting over <strong>250 skilled local artisans</strong>. Today, his workshop bridges traditional Indonesian heritage with contemporary Scandinavian and Bohemian aesthetics, supplying luxury hospitality resorts, boutique brands, and retail importers globally.
+        </p>
+
+        <div class="about-credentials">
+          <div class="cred-item">
+            <span class="cred-icon">✓</span>
+            <div>
+              <h4>SVLK & V-Legal Certified</h4>
+              <p>Indonesian Government certified timber & non-timber sustainable forestry compliance.</p>
+            </div>
+          </div>
+          <div class="cred-item">
+            <span class="cred-icon">✓</span>
+            <div>
+              <h4>Custom OEM & ODM</h4>
+              <p>Tailored production from your CAD drawings, moodboards, or 3D models.</p>
+            </div>
+          </div>
+          <div class="cred-item">
+            <span class="cred-icon">✓</span>
+            <div>
+              <h4>Ethical Fair Wage Guild</h4>
+              <p>Preserving generations of cultural weaving heritage with fair living wages.</p>
+            </div>
+          </div>
+          <div class="cred-item">
+            <span class="cred-icon">✓</span>
+            <div>
+              <h4>Factory Inspection Welcome</h4>
+              <p>Visit our Cirebon workshop and showroom anytime (or request live video tour).</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 14px;">
+          <a href="about.html" class="btn btn-primary">Read Full Company Profile</a>
+          <a href="contact.html" class="btn btn-outline">Schedule Video Showroom Tour</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comprehensive FAQ Section -->
+  <section class="section section-cream" id="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-pill">Quick Answers for Importers</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Everything international buyers need to know regarding stock availability, variants, wholesale pricing, container loading, and ocean shipping.
+        </p>
+      </div>
+
+      <div class="faq-search-box">
+        <span class="faq-search-icon">🔍</span>
+        <input type="text" id="faqSearchInput" placeholder="Search questions (e.g. ready stock, shipping time, MOQ, payment terms)..." />
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item active">
+          <div class="faq-question">
+            <span>1. How do I know if an item is ready stock or made-to-order?</span>
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-answer">
+            Every product in our catalog features a live status badge:
+            <br /><br />
+            • <strong>Ready to Ship:</strong> In-stock inventory in our Cirebon warehouse. These can be inspected, wrapped, and moved to Tanjung Priok Port (Jakarta) within <strong>3 to 5 business days</strong>.
+            <br />
+            • <strong>Made-to-Order:</strong> Production lead time is typically <strong>3 to 4 weeks</strong> for full container loads (FCL), depending on the complexity of the weave and total quantities.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>2. What variants, weave patterns, and finishes can I choose from?</span>
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-answer">
+            We offer extensive variant flexibility:
+            <br /><br />
+            • <strong>Weave Patterns:</strong> Classic 1/2" French Cannage, Open Webbing, Dense Herringbone, Kubu Mud Weave, Sunburst Peacock, and Cross-Lattice.
+            <br />
+            • <strong>Finishes:</strong> Natural Honey Clear Coat, Bleached Scandinavian Blonde, Vintage Tan, Kubu Grey, Warm Walnut, and Matte Ebonized Black. All finishes utilize non-toxic, eco-friendly water-based sealers.
+            <br />
+            • <strong>Custom Dimensions:</strong> We can adjust seat heights (e.g. counter vs bar height) or overall dimensions for commercial hospitality projects.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>3. How is the total price calculated, and are there volume discounts?</span>
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-answer">
+            Our standard prices are quoted in <strong>USD FOB Tanjung Priok Port (Jakarta)</strong>. We also provide direct CIF quotes to your destination port upon request.
+            <br /><br />
+            • <strong>Tier 1 (Sample / LCL):</strong> Standard wholesale price at product MOQ.
+            <br />
+            • <strong>Tier 2 (20ft Container ~28 CBM):</strong> 5% volume discount applied across order.
+            <br />
+            • <strong>Tier 3 (40ft High Cube ~68 CBM):</strong> 10% to 15% discount plus optimized nesting arrangement.
+            <br />
+            You can use our interactive RFQ tool on this website to build an instant quote with total estimated price and CBM volume!
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>4. How much does international shipping cost, and how long does it take to arrive?</span>
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-answer">
+            Ocean freight transit times from Tanjung Priok Port (Jakarta) to major regions:
+            <br /><br />
+            • <strong>Singapore / SE Asia:</strong> 3 – 5 Days (~$750 - $1,050 for 40ft HC)
+            <br />
+            • <strong>Australia (Sydney/Melbourne):</strong> 12 – 16 Days (~$1,800 - $2,300 for 40ft HC)
+            <br />
+            • <strong>United States (West Coast - LA/Long Beach):</strong> 22 – 26 Days (~$2,850 - $3,450 for 40ft HC)
+            <br />
+            • <strong>United States (East Coast - NY/NJ):</strong> 30 – 36 Days (~$3,600 - $4,300 for 40ft HC)
+            <br />
+            • <strong>Western Europe (Rotterdam/Hamburg):</strong> 26 – 32 Days (~$2,600 - $3,200 for 40ft HC)
+            <br />
+            Use the <strong>Transit Estimator</strong> widget above for live estimates to your specific port.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>5. What are your accepted payment terms for international orders?</span>
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-answer">
+            Standard B2B export payment terms:
+            <br /><br />
+            • <strong>Telegraphic Transfer (T/T):</strong> 30% deposit upon proforma invoice confirmation; remaining 70% balance payable upon submission of copy of original Bill of Lading (B/L) and export shipping documents.
+            <br />
+            • <strong>Letter of Credit (L/C):</strong> Irrevocable L/C at sight accepted for orders exceeding $30,000 USD.
+            <br />
+            • <strong>Sample Orders:</strong> 100% advance via T/T or Wise for fast dispatch.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>6. What export certifications and customs documents do you provide?</span>
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-answer">
+            We provide all necessary documentation for seamless customs clearance at your port:
+            <br /><br />
+            • Official Ocean Bill of Lading (B/L)
+            <br />
+            • Commercial Invoice & Detailed Packing List with carton CBM
+            <br />
+            • Certificate of Origin (Form A, Form D, Form E, or Form AK for tariff reduction)
+            <br />
+            • Indonesian SVLK / V-Legal Timber & Rattan Legality Certificate
+            <br />
+            • Phytosanitary Certificate issued by the Indonesian Agricultural Quarantine Agency
+            <br />
+            • Official Methyl Bromide Fumigation Certificate (stamped by licensed fumigator)
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner Section -->
+  <section class="section section-dark" style="text-align: center;">
+    <div class="container">
+      <span class="badge badge-pill" style="background: rgba(255,255,255,0.1); color: #e2d9cd;">Direct Sourcing from Cirebon</span>
+      <h2 class="section-title" style="margin-top: 14px;">Ready to Source Direct from Mr. Ridwan's Workshop?</h2>
+      <p class="section-subtitle" style="max-width: 620px; margin: 0 auto 36px;">
+        Whether you require immediate delivery from our 500+ unit ready-stock warehouse or custom hospitality furniture development, contact our export director today.
+      </p>
+
+      <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+        <button class="btn btn-primary js-open-rfq">
+          📋 Review RFQ List & Calculate CBM
+        </button>
+        <a href="https://wa.me/6281234567890?text=Hello%20Mr.%20Ridwan%2C%20I%20would%20like%20to%20inquire%20about%20your%20rattan%20export%20catalog%20and%20container%20pricing." target="_blank" class="btn btn-whatsapp">
+          💬 Chat with Mr. Ridwan on WhatsApp
+        </a>
+        <a href="contact.html" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: #fff;">
+          Request Factory Inspection Tour
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>RIDWAN RATTAN EXPORTS</h2>
+          <p>
+            Handcrafted Indonesian rattan furniture, lighting, and décor manufactured in Cirebon, West Java. Exporting sustainable luxury cane to 28+ countries worldwide since 2004.
+          </p>
+          <div style="font-size: 13.5px; line-height: 1.8;">
+            📍 <strong>Workshop & Showroom:</strong> Jl. Fatahillah No. 88, Weru, Cirebon, West Java 45154, Indonesia<br />
+            📧 <strong>Export Email:</strong> export@ridwanrattan.com<br />
+            📱 <strong>WhatsApp Desk:</strong> +62 812-3456-7890
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Export Catalog</h4>
+          <ul>
+            <li><a href="catalog.html?cat=living">Living Room Chairs & Sofas</a></li>
+            <li><a href="catalog.html?cat=dining">Dining Armchairs & Stools</a></li>
+            <li><a href="catalog.html?cat=bedroom">Headboards & Daybeds</a></li>
+            <li><a href="catalog.html?cat=decor">Pendant Lighting & Baskets</a></li>
+            <li><a href="catalog.html?stock=ready">Ready-to-Ship Inventory</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Buyer Logistics</h4>
+          <ul>
+            <li><a href="shipping-guide.html">Shipping Transit Calculator</a></li>
+            <li><a href="shipping-guide.html#incoterms">FOB vs CIF Incoterms</a></li>
+            <li><a href="shipping-guide.html#container-packing">Container Packing (CBM)</a></li>
+            <li><a href="faq.html">B2B Sourcing FAQ</a></li>
+            <li><a href="about.html#certifications">SVLK & Fumigation Certs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Factory Verification</h4>
+          <p style="font-size: 13px; margin-bottom: 14px;">
+            Registered under Ministry of Trade Republic of Indonesia (NIB / Export License Verified).
+          </p>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <span class="badge" style="background: rgba(255,255,255,0.1); color: #fff;">SVLK V-Legal</span>
+            <span class="badge" style="background: rgba(255,255,255,0.1); color: #fff;">AFAS Certified</span>
+            <span class="badge" style="background: rgba(255,255,255,0.1); color: #fff;">ISO 9001 QA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Ridwan Rattan Exports (PT Cirebon Rattan Mandiri). All rights reserved.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="faq.html">Terms & Conditions</a>
+          <a href="faq.html">Privacy Policy</a>
+          <a href="shipping-guide.html">Cargo Insurance Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating RFQ Drawer / Cart Modal -->
+  <div class="rfq-drawer-overlay" id="rfqOverlay"></div>
+  <div class="rfq-drawer" id="rfqDrawer">
+    <div class="drawer-header">
+      <div>
+        <h3>Your Quotation List (RFQ)</h3>
+        <p style="font-size: 12px; color: var(--text-muted);">Assemble items to calculate CBM & request invoice</p>
+      </div>
+      <button class="drawer-close" id="rfqDrawerClose">&times;</button>
+    </div>
+
+    <div class="drawer-items" id="rfqDrawerItems"></div>
+
+    <div class="drawer-footer">
+      <div class="drawer-summary-row">
+        <span>Estimated Cargo Volume:</span>
+        <strong id="rfqTotalCbm">0.00 CBM</strong>
+      </div>
+      <div class="drawer-summary-row">
+        <span>Container Utilization:</span>
+        <strong id="rfqContainerFill" style="color: var(--primary);">0% of 20ft Container</strong>
+      </div>
+      <div class="drawer-summary-row total">
+        <span>Estimated Total (FOB Jakarta):</span>
+        <span id="rfqTotalValue" style="color: var(--primary);">$0</span>
+      </div>
+
+      <div class="drawer-actions">
+        <button class="btn btn-whatsapp" onclick="sendWhatsAppRFQ()">
+          💬 Request Formal Quotation via WhatsApp
+        </button>
+        <button class="btn btn-outline btn-sm" onclick="clearRFQ()">
+          Clear Quotation List
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Direct WhatsApp Button -->
+  <a href="https://wa.me/6281234567890?text=Hello%20Mr.%20Ridwan%2C%20I%20have%20an%20export%20inquiry%20regarding%20your%20Cirebon%20rattan%20furniture." target="_blank" class="floating-whatsapp" title="Chat with Mr. Ridwan">
+    <span>💬</span>
+    <span>Export WhatsApp Desk</span>
+  </a>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+  <script>
+    let currentCategory = "all";
+    let currentStock = "all";
+
+    function setCategoryFilter(category, btn) {
+      currentCategory = category;
+      currentStock = "all";
+      document.querySelectorAll('#catalogFilterTabs .filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderProductGrid(currentCategory, currentStock);
+    }
+
+    function setStockFilter(stock, btn) {
+      currentStock = stock;
+      document.querySelectorAll('#catalogFilterTabs .filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderProductGrid(currentCategory, currentStock);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      renderProductGrid("all", "all");
+    });
+  </script>
+</body>
+</html>

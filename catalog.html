@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Export Catalog & Live Stock Status | Ridwan Rattan Exports Cirebon</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="announcement-bar">
+    <div class="container announcement-inner">
+      <div class="announcement-highlights">
+        <span>📍 <strong>Origin:</strong> Cirebon, Indonesia</span>
+        <span>🚢 <strong>Loading:</strong> Tanjung Priok (Jakarta)</span>
+        <span>🌿 <strong>SVLK & V-Legal Certified</strong></span>
+      </div>
+      <div class="announcement-actions">
+        <span>WhatsApp: <strong>+62 812-3456-7890</strong></span>
+        <select id="currencySelect" class="currency-selector">
+          <option value="USD">USD ($)</option>
+          <option value="EUR">EUR (€)</option>
+          <option value="AUD">AUD (A$)</option>
+          <option value="GBP">GBP (£)</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">🪑</div>
+        <div class="brand-text">
+          <h1>RIDWAN RATTAN</h1>
+          <span>EXPORTS • CIREBON INDONESIA</span>
+        </div>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="catalog.html" class="nav-link active">Export Catalog</a></li>
+          <li><a href="shipping-guide.html" class="nav-link">Shipping & Lead Times</a></li>
+          <li><a href="about.html" class="nav-link">About Mr. Ridwan</a></li>
+          <li><a href="faq.html" class="nav-link">B2B FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn-rfq-toggle js-open-rfq">
+          <span>📋 RFQ Quote</span>
+          <span class="badge-count badge-rfq-count">0</span>
+        </button>
+        <button class="mobile-toggle">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section section-cream" style="padding: 50px 0 40px; text-align: center;">
+    <div class="container">
+      <span class="badge badge-pill">Wholesale B2B Catalog 2026</span>
+      <h1 class="section-title">Cirebon Handcrafted Rattan Collections</h1>
+      <p class="section-subtitle">Real-time inventory status, detailed dimensional specifications, and wholesale pricing.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div style="background: var(--surface); padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--border-light); margin-bottom: 36px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;" id="catalogPageTabs">
+          <button class="filter-btn active" onclick="applyFilters('all', currentStockState, this)">All Categories</button>
+          <button class="filter-btn" onclick="applyFilters('living', currentStockState, this)">Living Room</button>
+          <button class="filter-btn" onclick="applyFilters('dining', currentStockState, this)">Dining & Bar</button>
+          <button class="filter-btn" onclick="applyFilters('bedroom', currentStockState, this)">Bedroom</button>
+          <button class="filter-btn" onclick="applyFilters('decor', currentStockState, this)">Lighting & Décor</button>
+        </div>
+        <div>
+          <select id="stockStatusSelect" class="form-select" onchange="handleStockDropdown(this.value)">
+            <option value="all">All Availability (Ready + Custom)</option>
+            <option value="ready">⚡ Ready Stock Only (3-5 Days)</option>
+            <option value="order">⏳ Made-to-Order Only (3-4 Weeks)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product-grid" id="catalogProductGrid"></div>
+    </div>
+  </section>
+
+  <div class="rfq-drawer-overlay" id="rfqOverlay"></div>
+  <div class="rfq-drawer" id="rfqDrawer">
+    <div class="drawer-header">
+      <h3>Your Quotation List (RFQ)</h3>
+      <button class="drawer-close" id="rfqDrawerClose">&times;</button>
+    </div>
+    <div class="drawer-items" id="rfqDrawerItems"></div>
+    <div class="drawer-footer">
+      <div class="drawer-summary-row">
+        <span>Volume:</span> <strong id="rfqTotalCbm">0.00 CBM</strong>
+      </div>
+      <div class="drawer-summary-row total">
+        <span>Total (FOB Jakarta):</span> <span id="rfqTotalValue">$0</span>
+      </div>
+      <button class="btn btn-whatsapp" style="width: 100%; margin-top: 12px;" onclick="sendWhatsAppRFQ()">
+        💬 Request Quote via WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    let currentCategoryState = "all";
+    let currentStockState = "all";
+    function applyFilters(cat, stock, btn) {
+      currentCategoryState = cat;
+      if (btn) {
+        document.querySelectorAll('#catalogPageTabs .filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      }
+      renderProductGrid(currentCategoryState, currentStockState, "catalogProductGrid");
+    }
+    function handleStockDropdown(val) {
+      currentStockState = val;
+      renderProductGrid(currentCategoryState, currentStockState, "catalogProductGrid");
+    }
+    document.addEventListener("DOMContentLoaded", () => {
+      renderProductGrid("all", "all", "catalogProductGrid");
+    });
+  </script>
+</body>
+</html>

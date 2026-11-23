@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>International Shipping & Lead Times Guide | Ridwan Rattan Exports</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">🪑</div>
+        <div class="brand-text">
+          <h1>RIDWAN RATTAN</h1>
+          <span>EXPORTS • CIREBON INDONESIA</span>
+        </div>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="catalog.html" class="nav-link">Export Catalog</a></li>
+          <li><a href="shipping-guide.html" class="nav-link active">Shipping & Lead Times</a></li>
+          <li><a href="about.html" class="nav-link">About Mr. Ridwan</a></li>
+          <li><a href="faq.html" class="nav-link">B2B FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn-rfq-toggle js-open-rfq">
+          <span>📋 RFQ Quote</span>
+          <span class="badge-count badge-rfq-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section section-cream" style="padding: 50px 0 40px; text-align: center;">
+    <div class="container">
+      <span class="badge badge-pill">Global Logistics Transparency</span>
+      <h1 class="section-title">International Shipping & Lead Time Guide</h1>
+      <p class="section-subtitle">Real ocean transit schedules, container loading capacities, and Incoterm definitions.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="calc-card" style="margin-bottom: 50px;">
+        <div>
+          <h3 style="margin-bottom: 14px;">Ocean Freight Estimator</h3>
+          <div class="form-group">
+            <label class="form-label">Destination Seaport</label>
+            <select id="shippingDestSelect" class="form-select" onchange="updateShippingEstimator()">
+              <option value="us-la" selected>🇺🇸 Los Angeles / Long Beach, CA (USA West Coast)</option>
+              <option value="us-ny">🇺🇸 New York / New Jersey (USA East Coast)</option>
+              <option value="eu-rot">🇳🇱 Port of Rotterdam / Antwerp (Western Europe)</option>
+              <option value="eu-ham">🇩🇪 Hamburg / Bremerhaven (Germany / CEE)</option>
+              <option value="au-syd">🇦🇺 Sydney / Melbourne (Australia)</option>
+              <option value="asia-sg">🇸🇬 Port of Singapore (Southeast Asia)</option>
+              <option value="asia-tok">🇯🇵 Tokyo / Yokohama (Japan)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Container Type</label>
+            <select id="containerSizeSelect" class="form-select" onchange="updateShippingEstimator()">
+              <option value="40ft" selected>40ft High Cube Container (FCL ~68 CBM)</option>
+              <option value="20ft">20ft Standard Container (FCL ~28 CBM)</option>
+            </select>
+          </div>
+        </div>
+        <div class="calc-result-box">
+          <h3 id="calcDestPort" style="color: #fff; margin-bottom: 12px;">Port of Los Angeles</h3>
+          <div class="calc-metrics-grid">
+            <div class="calc-metric-item">
+              <div class="label">Transit Duration</div>
+              <div class="val" id="calcTransitDays" style="color: #6ee7b7;">22 - 26 Days</div>
+            </div>
+            <div class="calc-metric-item">
+              <div class="label">Est. Freight</div>
+              <div class="val" id="calcEstFreight" style="color: #fde047;">$2,850 - $3,450</div>
+            </div>
+          </div>
+          <div class="calc-notice" id="calcCustomsNote">Phytosanitary & Methyl Bromide fumigation included.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rfq-drawer-overlay" id="rfqOverlay"></div>
+  <div class="rfq-drawer" id="rfqDrawer">
+    <div class="drawer-header">
+      <h3>Your Quotation List</h3>
+      <button class="drawer-close" id="rfqDrawerClose">&times;</button>
+    </div>
+    <div class="drawer-items" id="rfqDrawerItems"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

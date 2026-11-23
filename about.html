@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Mr. Ridwan & Cirebon Rattan Artisans | Export Company Profile</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">🪑</div>
+        <div class="brand-text">
+          <h1>RIDWAN RATTAN</h1>
+          <span>EXPORTS • CIREBON INDONESIA</span>
+        </div>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="catalog.html" class="nav-link">Export Catalog</a></li>
+          <li><a href="shipping-guide.html" class="nav-link">Shipping & Lead Times</a></li>
+          <li><a href="about.html" class="nav-link active">About Mr. Ridwan</a></li>
+          <li><a href="faq.html" class="nav-link">B2B FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn-rfq-toggle js-open-rfq">
+          <span>📋 RFQ Quote</span>
+          <span class="badge-count badge-rfq-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container" style="display: grid; grid-template-columns: 1fr 1.1fr; gap: 48px; align-items: center;">
+      <div>
+        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Mr Ridwan inspecting cane" style="width: 100%; height: 440px; object-fit: cover; border-radius: var(--radius-lg);" />
+      </div>
+      <div>
+        <span class="badge badge-pill">The Founder & Master Craftsman</span>
+        <h2 class="section-title">Bapak Ridwan & The Cirebon Artisan Guild</h2>
+        <p style="font-size: 15.5px; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">
+          Bapak Ridwan grew up in Cirebon, the capital that manufactures over 80% of Indonesia's finished rattan exports. With over 22 years of export leadership, he built a 4,500 m² workshop employing over 250 master weavers.
+        </p>
+        <div style="background: var(--bg-sand); padding: 18px; border-left: 3px solid var(--primary); margin-bottom: 20px; font-style: italic;">
+          "We built our export business on three pillars: absolute price transparency, guaranteed stock readiness, and zero customs hassle for international buyers."
+          <div style="font-weight: 700; margin-top: 6px; font-style: normal; color: var(--primary);">— Bapak Ridwan</div>
+        </div>
+        <div style="display: flex; gap: 10px;">
+          <a href="catalog.html" class="btn btn-primary">Browse Catalog</a>
+          <a href="contact.html" class="btn btn-outline">Visit Factory</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rfq-drawer-overlay" id="rfqOverlay"></div>
+  <div class="rfq-drawer" id="rfqDrawer">
+    <div class="drawer-header">
+      <h3>Your Quotation List</h3>
+      <button class="drawer-close" id="rfqDrawerClose">&times;</button>
+    </div>
+    <div class="drawer-items" id="rfqDrawerItems"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

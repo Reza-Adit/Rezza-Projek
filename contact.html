@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Mr. Ridwan & Request Quotation (RFQ) | Ridwan Rattan Exports</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">🪑</div>
+        <div class="brand-text">
+          <h1>RIDWAN RATTAN</h1>
+          <span>EXPORTS • CIREBON INDONESIA</span>
+        </div>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="catalog.html" class="nav-link">Export Catalog</a></li>
+          <li><a href="shipping-guide.html" class="nav-link">Shipping & Lead Times</a></li>
+          <li><a href="about.html" class="nav-link">About Mr. Ridwan</a></li>
+          <li><a href="faq.html" class="nav-link">B2B FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn-rfq-toggle js-open-rfq">
+          <span>📋 RFQ Quote</span>
+          <span class="badge-count badge-rfq-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container" style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px;">
+      <div style="background: var(--surface); padding: 36px; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
+        <h2 style="font-size: 24px; margin-bottom: 8px;">Official Export Inquiry (RFQ)</h2>
+        <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 24px;">An official Proforma Invoice will be returned within 4 hours.</p>
+
+        <form onsubmit="handleInquirySubmit(event)">
+          <div class="form-group">
+            <label class="form-label">Full Name</label>
+            <input type="text" id="inqName" class="form-input" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Company / Brand</label>
+            <input type="text" id="inqComp" class="form-input" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Destination Port / Country</label>
+            <input type="text" id="inqPort" class="form-input" placeholder="e.g. Port of Los Angeles or Sydney" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Order Details / Questions</label>
+            <textarea id="inqNotes" class="form-input" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-whatsapp" style="width: 100%;">
+            💬 Send RFQ Direct to WhatsApp
+          </button>
+        </form>
+      </div>
+
+      <div style="background: var(--bg-cream); padding: 36px; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
+        <h3 style="margin-bottom: 12px;">Cirebon Factory Address</h3>
+        <p style="font-size: 14px; color: var(--text-muted); line-height: 1.6; margin-bottom: 20px;">
+          <strong>PT Cirebon Rattan Mandiri (Ridwan Rattan Exports)</strong><br />
+          Jl. Fatahillah No. 88, Weru, Cirebon Regency,<br />
+          West Java 45154, Indonesia
+        </p>
+        <div style="font-size: 14px; line-height: 1.8;">
+          📱 WhatsApp: +62 812-3456-7890<br />
+          📧 Email: export@ridwanrattan.com<br />
+          ✈️ 3 hours from Jakarta via Cipali Tollway
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rfq-drawer-overlay" id="rfqOverlay"></div>
+  <div class="rfq-drawer" id="rfqDrawer">
+    <div class="drawer-header">
+      <h3>Your Quotation List</h3>
+      <button class="drawer-close" id="rfqDrawerClose">&times;</button>
+    </div>
+    <div class="drawer-items" id="rfqDrawerItems"></div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    function handleInquirySubmit(e) {
+      e.preventDefault();
+      const n = document.getElementById('inqName').value;
+      const c = document.getElementById('inqComp').value;
+      const p = document.getElementById('inqPort').value;
+      const msg = document.getElementById('inqNotes').value;
+      const text = `Hello Mr. Ridwan,\n\nExport inquiry from ${c}.\nContact: ${n}\nDestination Port: ${p}\nNotes: ${msg}`;
+      window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(text)}`, "_blank");
+    }
+  </script>
+</body>
+</html>

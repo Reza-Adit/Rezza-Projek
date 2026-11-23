@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B2B Importer FAQ & Help Center | Ridwan Rattan Exports Cirebon</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">🪑</div>
+        <div class="brand-text">
+          <h1>RIDWAN RATTAN</h1>
+          <span>EXPORTS • CIREBON INDONESIA</span>
+        </div>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="catalog.html" class="nav-link">Export Catalog</a></li>
+          <li><a href="shipping-guide.html" class="nav-link">Shipping & Lead Times</a></li>
+          <li><a href="about.html" class="nav-link">About Mr. Ridwan</a></li>
+          <li><a href="faq.html" class="nav-link active">B2B FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn-rfq-toggle js-open-rfq">
+          <span>📋 RFQ Quote</span>
+          <span class="badge-count badge-rfq-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section section-cream" style="padding: 50px 0 40px; text-align: center;">
+    <div class="container">
+      <span class="badge badge-pill">Instant Knowledgebase</span>
+      <h1 class="section-title">Frequently Asked Questions</h1>
+      <p class="section-subtitle">Comprehensive answers to repetitive client sourcing inquiries.</p>
+      <div class="faq-search-box" style="margin-top: 24px;">
+        <span class="faq-search-icon">🔍</span>
+        <input type="text" id="faqSearchInput" placeholder="Filter questions (e.g. ready stock, variants, shipping, payment)..." />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="faq-list">
+        <div class="faq-item active">
+          <div class="faq-question">
+            <span>1. How do I know if an item is ready stock or made-to-order?</span>
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-answer">
+            Look for the green <strong>"Ready to Ship"</strong> badge on our items. Ready-stock products depart our Cirebon workshop within <strong>3 to 5 business days</strong>. Made-to-order collections require <strong>3 to 4 weeks</strong> production for full container loads (FCL).
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>2. What variants, weaves, and finishes can I order?</span>
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-answer">
+            We offer 15+ weave techniques (Cannage, Herringbone, Kubu, Peacock) and 8 natural eco-friendly finishes (Natural Honey, Kubu Grey, Nordic Blonde, Ebonized Black, Walnut). Custom dimensions and OEM designs are welcome.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>3. How is the total price calculated, and are there container discounts?</span>
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-answer">
+            Quoted in <strong>USD FOB Tanjung Priok Port (Jakarta)</strong>. We offer 5% discounts on 20ft containers and 10%–15% discounts on 40ft High Cube containers.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>4. How much does ocean shipping cost, and how long does it take?</span>
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-answer">
+            Transit time: Singapore 3-5 days; Australia 12-16 days; USA West Coast 22-26 days; Europe 26-32 days. Use our interactive calculator on the Shipping Guide page for live estimates.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>5. What are your accepted export payment terms?</span>
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-answer">
+            Standard terms: 30% deposit via T/T to begin manufacturing; 70% balance upon submission of copy of original Bill of Lading (B/L). Irrevocable L/C at sight accepted for orders exceeding $30,000 USD.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rfq-drawer-overlay" id="rfqOverlay"></div>
+  <div class="rfq-drawer" id="rfqDrawer">
+    <div class="drawer-header">
+      <h3>Your Quotation List</h3>
+      <button class="drawer-close" id="rfqDrawerClose">&times;</button>
+    </div>
+    <div class="drawer-items" id="rfqDrawerItems"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
